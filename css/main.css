@@ -1,0 +1,136 @@
+
+*{
+  margin:0px;
+  padding:0px;
+}
+/*dando estilo y medidas al body*/
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  color: #373B47;
+  text-decoration: none;/*para quitar la rayita del hipervínculo*/
+}
+a:hover {
+  color: #E95853;/*para cambiar de color al sobreponerse en el link*/
+}
+.text-uppercase {/*para pasar a mayúsculas*/
+  text-transform: uppercase;
+}
+
+.container ,.container1, .container2 , .picture-background, #footer{/*especificaciones comunes*/
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container{
+  background:rgb(241,124,114);/*color de fondo*/
+}
+
+.box-header {
+    display:inline-block;/*para la conformación del menú */  
+}
+
+header{
+  padding:0px 230px;
+  position:relative;
+}/*se le da position:relative para que sirva de referencia*/
+
+.logo-header{
+    width:60px;
+    position:relative;/ /*para moverlo sin romper el flujo*/ 
+    left:500px; 
+}
+.logo-header2{
+    width:900px;
+    position:relative;/*para moverlo sin romper el flujo*/ 
+    left:220px;   
+}
+
+.container1{
+  position:relative;
+}/*se usó position:relative para que sirva de referencia para poder usar position:absolute en #letter-container1*/
+
+#letter-container1{
+  text-align:center;
+  position:absolute;
+  bottom:200px;
+  left:300px;
+  color:#fff;
+}
+
+img{/*para que ocupe todo el espacio*/
+  max-width:100%;
+}
+
+header .text-uppercase{
+  margin: 0  15px;
+}
+
+#subcontainer1{
+  padding-top:40px;
+  text-align:center;
+  color:white;
+}
+#subcontainer2{
+  display:table;
+  text-align:center;
+  padding-top:70px;
+  padding-bottom:70px;
+  padding-left:100px;
+  padding-right:30px;
+  color:white;
+}/*se usó display:block, para que los elementos flotados (#box-subcontainer2) se contengan otra vez en el padre y se muestren por completo*/
+
+#box-subcontainer2{
+  width:30%;
+  float:left; 
+}
+
+.container h2, .container2 h2{/*tamaño a la letra*/
+  font-size:30px;
+}
+
+#box-subcontainer2 img{
+  max-width:50%;
+}
+
+#box{
+  width:30%;
+  float:left;
+  font-weight:bold;
+}
+
+.container2{
+  margin-top:30px;
+  text-align:center;
+}
+
+.container2 h4{
+  padding:40px 250px;
+}
+
+.menu-options{
+  padding-left:100px;
+}
+.menu-options p{
+  padding-top:8px;
+  padding-bottom:40px;
+}
+
+.menu-options img{
+  width:80%;
+}
+
+#footer{
+  height:70px;
+  background:rgb(41,45,54);
+  text-align:center;
+  padding-top:20px;
+  color:white;
+  clear:both;/*para romper el flujo que se originó por float*/
+}
